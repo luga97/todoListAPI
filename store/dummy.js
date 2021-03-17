@@ -15,10 +15,22 @@ async function get(table, id){
 }
 
 async function upsert(table, data){
-  if(!db[table]){
-      db[table] = []
+  fetched = db[table]
+  
+  if(!fetched){
+      fetched = []
   }
-  db[table].push(data)
+  
+  aux = false
+  for (let i = 0; i < fetched.length; i++) {
+    if(fetched[i].id == data.id){
+      fetched.splice(i,1)
+      aux = true
+    }   
+  }
+  
+  fetched.push(data)
+
   return data
 }
 

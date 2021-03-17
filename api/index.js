@@ -1,5 +1,4 @@
 const express = require('express')
-const config = require('../config')
 const tasks = require('./components/tasks/network')
 const errors = require('../network/errors')
 
