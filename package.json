@@ -2,7 +2,7 @@
   "name": "jestapi",
   "version": "1.0.0",
   "description": "JestAPI with Express.JS",
-  "main": "index.js",
+  "main": "./api/server.js",
   "scripts": {
     "start": "node ./api/server.js",
     "test": "jest --runInBand",
@@ -15,7 +15,7 @@
     "jest",
     "express"
   ],
-  "author": "Raul Palacios",
+  "author": "Luis Garcia",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
