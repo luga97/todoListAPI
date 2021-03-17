@@ -1,0 +1,28 @@
+{
+  "name": "jestapi",
+  "version": "1.0.0",
+  "description": "JestAPI with Express.JS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./api/server.js",
+    "test": "jest --runInBand",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [
+    "jest",
+    "express"
+  ],
+  "author": "Raul Palacios",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nanoid": "^3.1.10"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3"
+  }
+}
