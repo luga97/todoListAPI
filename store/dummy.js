@@ -1,5 +1,5 @@
 const db = {
-  'user':[
+  'tasks':[
       {id: '1',title: 'Limpiar los platos', description: 'descripcion de la tarea'},
       {id: '2',title: 'Ir por las compras', description: 'leche, huevo,tomate'}
   ]
